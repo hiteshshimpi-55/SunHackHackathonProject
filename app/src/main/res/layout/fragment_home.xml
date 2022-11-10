@@ -1,14 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha="50"
+                    android:src="@drawable/gateway_of_india"
+                    android:padding="05dp"
+                    android:background="@drawable/border_image_view" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="193dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/grey"
+                        android:fontFamily="sans-serif"
+                        android:padding="10dp"
+                        android:text="@string/the_gateway_of_india_is_an_arch_monument_built_in_the_early_20th_century_in_the_city_of_bombay_mumbai_india"
+                        android:textColor="#404258"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/proceed_gateway"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:background="@color/grey2"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:padding="05dp"
+                        android:text="View More"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginBottom="05dp"
+                        android:layout_marginEnd="05dp"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:alpha="50"
+                    android:src="@drawable/taj_mahal"
+                    android:padding="05dp"
+                    android:background="@drawable/border_image_view" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="255dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/grey"
+                        android:fontFamily="sans-serif"
+                        android:padding="10dp"
+                        android:text="@string/the_taj_mahal_is_located_on_the_right_bank_of_the_yamuna_river_in_a_vast_mughal_garden_that_encompasses_nearly_17_hectares_in_the_agra_district_in_uttar_pradesh_it_was_built_by"
+                        android:textColor="#404258"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/proceed_taj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="05dp"
+                        android:background="@color/grey2"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:padding="05dp"
+                        android:text="View More"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:alpha="50"
+                    android:src="@drawable/redfort"
+                    android:padding="05dp"
+                    android:background="@drawable/border_image_view" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="255dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/grey"
+                        android:fontFamily="sans-serif"
+                        android:padding="10dp"
+                        android:text="@string/red_fort_also_called_lal_qal_ah_also_spelled_lal_kila_or_lal_qila_mughal_fort_in_old_delhi_india_it_was_built_by_shah_jah_n_in_the_mid_17th_century_and_remains_a_major_tourist_attraction"
+                        android:textColor="#404258"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/proceed_red_fort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="05dp"
+                        android:background="@color/grey2"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:padding="05dp"
+                        android:text="View More"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:alpha="50"
+                    android:src="@drawable/chittogarh"
+                    android:padding="05dp"
+                    android:background="@drawable/border_image_view" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="255dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/grey"
+                        android:fontFamily="sans-serif"
+                        android:padding="10dp"
+                        android:text="@string/the_chittorgarh_literally_chittor_fort_also_known_as_chittod_fort_is_one_of_the_largest_forts_in_india_it_is_a_unesco_world_heritage_site_the_fort_was_the_capital_of_mewar_and_is_located_in_the_present_day_city_of_chittorgarh"
+                        android:textColor="#404258"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/proceed_chittorgarh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="05dp"
+                        android:background="@color/grey2"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:padding="05dp"
+                        android:text="View More"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</HorizontalScrollView>

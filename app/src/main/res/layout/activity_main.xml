@@ -4,7 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/page_holder"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:name="com.example.sunhacks_patch1.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="138dp"
+        android:gravity="center"
+        android:background="@drawable/custom_navigate_bar">
+
+        <TextView
+            android:id="@+id/load_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/load_survey_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Survey"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="80dp"/>
+
+        <TextView
+            android:id="@+id/load_chat_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="80dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
