@@ -9,6 +9,7 @@ import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -39,9 +40,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private FusedLocationProviderClient fusedLocationProviderClient;
     List<LatLng> list;
     private static final int request_code=101;
-    private LatLngBounds bounds;
-    private LatLngBounds.Builder builder;
     double lat,lng;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +86,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        builder = new LatLngBounds.Builder();
         getCurrentLocation();
 
         list.add(new LatLng(19.9047,73.4719));
@@ -159,7 +159,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     LatLng latLng = new LatLng(lat,lng);
                     Marker marker = mMap.addMarker(new MarkerOptions().position(latLng).title("Current Location"));
-                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,11.0f));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,10));
                     marker.showInfoWindow();
                 }
             }
