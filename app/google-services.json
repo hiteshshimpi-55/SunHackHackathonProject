@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "697187663098",
+    "firebase_url": "https://apprestrictor-default-rtdb.firebaseio.com",
+    "project_id": "apprestrictor",
+    "storage_bucket": "apprestrictor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697187663098:android:02fe64a48ea25fea549d43",
+        "android_client_info": {
+          "package_name": "com.example.sunhacks_patch1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697187663098-vh0o9hnm2e36h2p6hs045ojfeu8oj252.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSHVK5IeKmDFB1GlnIhOl3sqGf8-u7iUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697187663098-vh0o9hnm2e36h2p6hs045ojfeu8oj252.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

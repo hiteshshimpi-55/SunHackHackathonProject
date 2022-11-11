@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@drawable/top_view_background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Register Here!"
+        android:layout_marginStart="50dp"
+        android:textSize="24sp"
+        android:textColor="#CDFCF6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:hint="Email"
+        android:padding="10dp"
+        android:background="@drawable/custom_edit_texts"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:inputType="numberPassword"
+        android:background="@drawable/custom_edit_texts"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/editTextConfPassword"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:hint="Confirm Password"
+        android:padding="10dp"
+        android:inputType="numberPassword"
+        android:background="@drawable/custom_edit_texts"
+        android:layout_gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register_user"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_login_button"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
