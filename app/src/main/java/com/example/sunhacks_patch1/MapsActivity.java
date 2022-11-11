@@ -130,7 +130,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LocationCallback locationCallback = new LocationCallback(){
             @Override
             public void onLocationResult(LocationResult locationResult) {
-                Toast.makeText(MapsActivity.this, "Location Result is = "+locationResult, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MapsActivity.this, "Location Result is = "+locationResult, Toast.LENGTH_SHORT).show();
                 if(locationResult == null)
                 {
                     Toast.makeText(MapsActivity.this, "Current location is null", Toast.LENGTH_SHORT).show();
@@ -140,7 +140,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 {
                     if(location!=null)
                     {
-                        Toast.makeText(MapsActivity.this, "Location Result is = "+location.getLatitude(), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MapsActivity.this, "Location Result is = "+location.getLatitude(), Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -159,7 +159,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     LatLng latLng = new LatLng(lat,lng);
                     Marker marker = mMap.addMarker(new MarkerOptions().position(latLng).title("Current Location"));
-                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,10));
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,10));
                     marker.showInfoWindow();
                 }
             }
